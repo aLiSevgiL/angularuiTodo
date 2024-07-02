@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { PostComponent } from "./compenents/post/post.component";
+import { UserComponent } from "./compenents/user/user.component";
+import { NavbarComponent } from "./compenents/navbar/navbar.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, CommonModule, PostComponent, UserComponent, NavbarComponent]
 })
 export class AppComponent {
-  title = 'angularuiTodo';
+/* */ 
+  title = 'Ali Sevgil';
+  user ="İncirtepe"
+
+
 }

@@ -1,0 +1,16 @@
+<table class="table" >
+    <tr>
+    <td>PostId</td>
+    <td>Title</td>
+    <td>Body</td>
+    <td>Status</td>
+
+</tr>
+    <tr *ngFor ="let todo of todos">
+        <td>{{todo.id}}</td>
+        <td>{{todo.title}}</td>
+        <td>{{todo.body}}</td>
+        <td>{{todo.status}}</td>
+    </tr>
+</table>
+
