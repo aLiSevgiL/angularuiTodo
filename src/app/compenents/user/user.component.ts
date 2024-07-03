@@ -7,11 +7,11 @@ import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-user',
-  standalone: true,
   imports: [CommonModule,HttpClientModule],
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css'],
   providers :[HttpClient],
+  standalone: true,
 })
 export class UserComponent implements OnInit {
  
